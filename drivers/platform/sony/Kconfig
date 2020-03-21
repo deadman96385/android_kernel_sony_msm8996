@@ -1,0 +1,48 @@
+# Sony configuration options
+
+config MACH_SONY
+	bool "Sony board"
+	depends on ARCH_QCOM
+	help
+	 Support for Sony boards.
+
+config ARCH_SONY_TONE
+    bool "Sony Mobile Tone platform"
+    depends on ARCH_MSM8996
+	select MACH_SONY
+    help
+      Support for the SONY Mobile Tone platform
+      which is based on QCOM MSM8996 chipset.
+      If you enable this config,
+      please use SONY Mobile device tree.
+
+menu "sony board selection"
+
+config MACH_SONY_DORA
+    bool "Sony Mobile DORA"
+    depends on ARCH_SONY_TONE
+    help
+      Support for the SONY Mobile Dora device
+      which is based on SONY Tone platform.
+      If you enable this config,
+      please use SONY Mobile device tree.
+
+config MACH_SONY_KAGURA
+    bool "Sony Mobile KAGURA"
+    depends on ARCH_SONY_TONE
+    help
+      Support for the SONY Mobile Kagura device
+      which is based on SONY Tone platform.
+      If you enable this config,
+      please use SONY Mobile device tree.
+
+config MACH_SONY_KEYAKI
+    bool "Sony Mobile KEYAKI"
+    depends on ARCH_SONY_TONE
+    help
+      Support for the SONY Mobile Keyaki device
+      which is based on SONY Tone platform.
+      If you enable this config,
+      please use SONY Mobile device tree.
+
+endmenu
