@@ -137,6 +137,10 @@ dtb-$(CONFIG_MACH_SONY_KAGURA) += msm8996-v3.0-tone-kagura_generic.dtb \
 	msm8996-v3.0-pmi8996-tone-kagura_generic.dtb \
 	msm8996-v3-tone-kagura_generic.dtb \
 	msm8996-v3-pmi8996-tone-kagura_generic.dtb
+dtb-$(CONFIG_MACH_SONY_KEYAKI) += msm8996-v3.0-tone-keyaki_generic.dtb \
+	msm8996-v3.0-pmi8996-tone-keyaki_generic.dtb \
+	msm8996-v3-tone-keyaki_generic.dtb \
+	msm8996-v3-pmi8996-tone-keyaki_generic.dtb
 endif
 
 dtb-$(CONFIG_MSM_GVM_QUIN) += vplatform-lfv-msm8996.dtb
